@@ -9,7 +9,13 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'simple_decorator'
+
 gem 'jquery-rails'
 
 # for css testing
 gem 'cactus'
+group :test do
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+end
