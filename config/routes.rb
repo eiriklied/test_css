@@ -13,6 +13,9 @@ TestCss::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
+  get ':page_id' => 'pages#show', as: 'page'
+  root to: 'pages#show'
+
   # Sample resource route with options:
   #   resources :products do
   #     member do
